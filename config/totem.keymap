@@ -88,10 +88,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R          &as_ht T T    &kp Y    &kp U          &kp I        &kp O       &kp P
-       &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &as_ht G G    &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp Q  &kp Z       &kp X       &kp C        &kp V          &kp B         &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
-                               &kp DEL      &lt NAV SPACE  &kp SPACE     &kp RET  &lt SYM ENTER  &kp BSPC
+                    &as_ht Q Q  &as_ht W W  &as_ht E E   &as_ht R R     &as_ht T T    &as_ht Y Y  &as_ht U U     &as_ht I I          &as_ht O O      &as_ht P P
+                    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &as_ht G G    &as_ht H H  &as_ht J J     &as_ht K K          &as_ht L L      &as_ht SEMI COLON
+&mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C   &as_ht V V     &as_ht B B    &as_ht N N  &as_ht M M     &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH   &as_ht SINGLE_QUOTE SINGLE_QUOTE
+                                            &kp DEL      &lt NAV SPACE  &kp TAB       &kp RET     &lt SYM ENTER  &kp BSPC
             >;
         };
 
