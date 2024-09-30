@@ -57,6 +57,13 @@
             bindings = <&kp RBKT &kp SPACE &kp SPACE &kp RBRC &kp LEFT &kp LEFT>;
             label = "BRACKETS";
         };
+
+        func_arrow: func_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT &kp SPACE>;
+            label = "FUNC_ARROW";
+        };
     };
 
     behaviors {
@@ -203,7 +210,7 @@
         symbol_layer {
             bindings = <
         &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
-        &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
+        &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &func_arrow   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
 &trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
                                           &trans             &trans        &trans                   &trans        &kp DOT               &trans
             >;
