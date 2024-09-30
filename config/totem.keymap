@@ -12,6 +12,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define NAV  1
@@ -54,7 +55,7 @@
         Brackets: Brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RBKT &kp SPACE &kp SPACE &kp RBRC &kp LEFT &kp LEFT>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp SPACE &kp SPACE &kp RBRC &kp LEFT &kp LEFT>;
             label = "BRACKETS";
         };
 
@@ -63,6 +64,27 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT &kp SPACE>;
             label = "FUNC_ARROW";
+        };
+
+        alt_tab_on: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LA(TAB)>;
+            label = "ALT_TAB";
+        };
+
+        alt_tab_enter: alt_tab_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kt LA(TAB)>;
+            label = "ALT_TAB_OFF";
+        };
+
+        alt_tab_esc: alt_tab_esc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kt LA(TAB)>;
+            label = "ALT_TAB_ESC";
         };
     };
 
@@ -103,7 +125,7 @@
                     &as_ht Q Q  &as_ht W W  &as_ht E E  &as_ht R R              &as_ht T T    &as_ht Y Y  &as_ht U U   &as_ht I I          &as_ht O O      &as_ht P P
                     &lt 5 A     &lt 4 S     &lt 3 D     &lt 2 F                 &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &as_ht SEMI COLON
 &mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C  &as_ht V V              &as_ht B B    &as_ht N N  &as_ht M M   &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH   &as_ht SINGLE_QUOTE SINGLE_QUOTE
-                                            &sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB     &kp RET     &lt 7 ENTER  &kp BSPC
+                                            &sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB     &sl 7       &lt 7 ENTER  &kp BSPC
             >;
         };
 
@@ -223,10 +245,21 @@
                           &trans     &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)         &kp LG(N0)      &kp K_MUTE        &kp C_VOLUME_DOWN          &kp C_VOLUME_UP          &trans
                           &kp LS(A)  &kp LS(S)         &kp LS(D)         &kp LS(F)         &kp LS(LA(LC(LG(G))))    &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp LA(LS(C_VOLUME_DOWN))  &kp LA(LS(C_VOLUME_UP))  &kp C_NEXT
 &kp LS(LC(LG(NUMBER_4)))  &trans     &trans            &trans            &kp LC(LG(A))     &kp LC(LG(F))            &kp LC(LG(Q))   &kp LG(MINUS)     &kp LG(EQUAL)              &trans                   &trans      &trans
-                                                       &trans            &kp LG(SPACE)     &kp LG(TAB)              &trans          &trans            &trans
+                                                       &trans            &kp LG(SPACE)     &kp LG(TAB)              &alt_tab_on     &trans            &trans
             >;
 
             label = "SHO";
+        };
+
+        window_layer {
+            bindings = <
+              &kp Q   &trans  &trans  &trans  &trans    &trans  &trans          &kp UP_ARROW    &trans     &trans
+              &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT  &trans
+&alt_tab_esc  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans     &trans  &trans
+                              &trans  &trans  &trans    &trans  &alt_tab_enter  &trans
+            >;
+
+            label = "WIN";
         };
     };
 };
