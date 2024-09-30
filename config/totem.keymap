@@ -55,7 +55,7 @@
         Brackets: Brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_BRACKET) &kp SPACE &kp SPACE &kp RBRC &kp LEFT &kp LEFT>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp SPACE &kp SPACE &kp LS(RIGHT_BRACKET) &kp LEFT &kp LEFT>;
             label = "BRACKETS";
         };
 
@@ -69,21 +69,21 @@
         alt_tab_on: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LG(TAB)>;
+            bindings = <&kt LEFT_COMMAND &kp TAB>;
             label = "ALT_TAB";
         };
 
         alt_tab_enter: alt_tab_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kt LG(TAB)>;
+            bindings = <&kt LEFT_COMMAND>;
             label = "ALT_TAB_OFF";
         };
 
         alt_tab_esc: alt_tab_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kt LG(TAB)>;
+            bindings = <&kp ESC &kt LEFT_COMMAND>;
             label = "ALT_TAB_ESC";
         };
     };
