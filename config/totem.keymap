@@ -182,13 +182,15 @@
             label = "CON";
         };
 
-        layer_5 {
+        shift_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans            &trans        &trans            &trans    &trans  &trans        &kp LS(UP_ARROW)    &trans         &trans
+        &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &trans  &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &trans
+&trans  &trans  &trans            &trans        &trans            &trans    &trans  &trans        &trans              &trans         &trans  &trans
+                                  &trans        &trans            &trans    &trans  &trans        &trans
             >;
+
+            label = "SHI";
         };
 
         layer_6 {
