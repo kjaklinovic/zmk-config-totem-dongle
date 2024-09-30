@@ -69,21 +69,21 @@
         alt_tab_on: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_COMMAND &kp TAB>;
+            bindings = <&kt LEFT_COMMAND &kp TAB &to 8>;
             label = "ALT_TAB";
         };
 
         alt_tab_enter: alt_tab_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_COMMAND>;
+            bindings = <&kt LEFT_COMMAND &to 0>;
             label = "ALT_TAB_OFF";
         };
 
         alt_tab_esc: alt_tab_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kt LEFT_COMMAND>;
+            bindings = <&kp ESC &kt LEFT_COMMAND &to 0>;
             label = "ALT_TAB_ESC";
         };
     };
