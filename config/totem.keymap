@@ -50,6 +50,13 @@
 
             label = "SHIFT";
         };
+
+        Brackets: Brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT &kp SPACE &kp SPACE &kp RBRC &kp LEFT &kp LEFT>;
+            label = "BRACKETS";
+        };
     };
 
     behaviors {
@@ -193,13 +200,15 @@
             label = "SHI";
         };
 
-        layer_6 {
+        symbol_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
+        &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
+&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
+                                          &trans             &trans        &trans                   &trans        &kp DOT               &trans
             >;
+
+            label = "SYM";
         };
 
         layer_7 {
