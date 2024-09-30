@@ -88,10 +88,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &as_ht Q Q  &as_ht W W  &as_ht E E   &as_ht R R   &as_ht T T    &as_ht Y Y  &as_ht U U   &as_ht I I          &as_ht O O      &as_ht P P
-                    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &as_ht SEMI COLON
-&mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C   &as_ht V V   &as_ht B B    &as_ht N N  &as_ht M M   &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH   &as_ht SINGLE_QUOTE SINGLE_QUOTE
-                                            &kp DEL      &lt 1 SPACE  &kp TAB       &kp RET     &lt 2 ENTER  &kp BSPC
+                    &as_ht Q Q  &as_ht W W  &as_ht E E   &as_ht R R              &as_ht T T    &as_ht Y Y  &as_ht U U   &as_ht I I          &as_ht O O      &as_ht P P
+                    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F             &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &as_ht SEMI COLON
+&mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C   &as_ht V V              &as_ht B B    &as_ht N N  &as_ht M M   &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH   &as_ht SINGLE_QUOTE SINGLE_QUOTE
+                                            &sl 6        &mt LEFT_COMMAND SPACE  &lt 1 TAB     &kp RET     &lt 7 ENTER  &kp BSPC
             >;
         };
 
