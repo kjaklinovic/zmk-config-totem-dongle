@@ -209,22 +209,24 @@
 
         symbol_layer {
             bindings = <
-        &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
-        &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &func_arrow   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
-&trans  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
-                                          &trans             &trans        &trans                   &trans        &kp DOT               &trans
+            &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
+            &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &func_arrow   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
+&kp LA(N8)  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
+                                              &trans             &trans        &trans                   &trans        &kp DOT               &trans
             >;
 
             label = "SYM";
         };
 
-        layer_7 {
+        shortcut_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                          &trans     &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)         &kp LG(N0)      &kp K_MUTE        &kp C_VOLUME_DOWN          &kp C_VOLUME_UP          &trans
+                          &kp LS(A)  &kp LS(S)         &kp LS(D)         &kp LS(F)         &kp LS(LA(LC(LG(G))))    &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp LA(LS(C_VOLUME_DOWN))  &kp LA(LS(C_VOLUME_UP))  &kp C_NEXT
+&kp LS(LC(LG(NUMBER_4)))  &trans     &trans            &trans            &kp LC(LG(A))     &kp LC(LG(F))            &kp LC(LG(Q))   &kp LG(MINUS)     &kp LG(EQUAL)              &trans                   &trans      &trans
+                                                       &trans            &kp LG(SPACE)     &kp LG(TAB)              &trans          &trans            &trans
             >;
+
+            label = "SHO";
         };
     };
 };
