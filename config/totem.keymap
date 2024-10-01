@@ -35,6 +35,12 @@
             key-positions = <6 7>;
             layers = <0>;
         };
+
+        to_nav_layer {
+            bindings = <&to 1>;
+            key-positions = <6 8>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -151,7 +157,7 @@
         &kp LG(Q)  &kp LG(W)         &kp LG(E)     &kp LG(R)         &trans           &trans  &kp LC(M)               &kp UP_ARROW       &kp LC(I)  &kp LG(LA(LEFT_BRACKET))
         &kp LSHFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LS(LG(A))    &trans  &kp LEFT                &kp DOWN           &kp RIGHT  &kp LG(LA(RIGHT_BRACKET))
 &trans  &kp LG(Z)  &kp LG(X)         &kp LG(C)     &kp LG(V)         &kp LG(B)        &trans  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans     &kp LG(SLASH)              &trans
-                                     &mo 0         &kp SPACE         &trans           &trans  &trans                  &trans
+                                     &to 0         &kp SPACE         &trans           &trans  &trans                  &trans
             >;
         };
 
