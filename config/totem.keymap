@@ -180,10 +180,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans          &trans            &trans  &trans  &trans           &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
-        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp S   &trans  &kp LC(LG(J))    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
-&trans  &trans          &trans            &trans  &trans  &trans           &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
-                                          &trans  &trans  &trans           &trans  &kp LS(LG(A))             &kp LG(BACKSPACE)
+        &trans          &trans            &trans  &trans  &trans    &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
+        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp S   &trans  &trans    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
+&trans  &trans          &trans            &trans  &trans  &trans    &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
+                                          &trans  &trans  &trans    &trans  &kp LS(LG(A))             &kp LG(BACKSPACE)
             >;
         };
 
@@ -206,10 +206,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans          &trans            &trans  &trans            &trans    &trans  &kp LC(NUMBER_6)    &kp UP_ARROW       &kp LS(LG(A))  &trans
-        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans  &kp LEFT_COMMAND  &trans    &trans  &kp LA(LEFT_ARROW)  &kp DOWN           &kp LA(RIGHT)  &trans
-&trans  &trans          &trans            &trans  &trans            &trans    &trans  &kp LC(LG(LEFT))    &kp LC(LG(RIGHT))  &trans         &trans  &trans
-                                          &trans  &trans            &trans    &trans  &kp LA(ENTER)       &kp LA(BACKSPACE)
+        &trans          &trans            &trans  &trans            &trans           &trans  &kp LC(NUMBER_6)    &kp UP_ARROW       &kp LS(LG(A))  &trans
+        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans  &kp LEFT_COMMAND  &kp LC(LG(J))    &trans  &kp LA(LEFT_ARROW)  &kp DOWN           &kp LA(RIGHT)  &trans
+&trans  &trans          &trans            &trans  &trans            &trans           &trans  &kp LC(LG(LEFT))    &kp LC(LG(RIGHT))  &trans         &trans  &trans
+                                          &trans  &trans            &trans           &trans  &kp LA(ENTER)       &kp LA(BACKSPACE)
             >;
         };
 
