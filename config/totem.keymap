@@ -249,7 +249,7 @@
         shortcut_layer {
             bindings = <
                           &trans     &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)         &kp LG(N0)      &kp K_MUTE        &kp C_VOLUME_DOWN          &kp C_VOLUME_UP          &trans
-                          &kp LS(A)  &kp LS(S)         &kp LS(D)         &kp LS(F)         &kp LS(LA(LC(LG(G))))    &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp LA(LS(C_VOLUME_DOWN))  &kp LA(LS(C_VOLUME_UP))  &kp C_NEXT
+                          &kp LS(A)  &kp LS(S)         &kp LS(D)         &kp LS(F)         &kp LS(LA(LC(LG(G))))    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp LA(LS(C_VOLUME_DOWN))  &kp LA(LS(C_VOLUME_UP))  &kp C_NEXT
 &kp LS(LC(LG(NUMBER_4)))  &trans     &trans            &trans            &kp LC(LG(A))     &kp LC(LG(F))            &kp LC(LG(Q))   &kp LG(MINUS)     &kp LG(EQUAL)              &trans                   &trans      &trans
                                                        &trans            &kp LG(SPACE)     &kp LG(TAB)              &alt_tab_on     &trans            &trans
             >;
