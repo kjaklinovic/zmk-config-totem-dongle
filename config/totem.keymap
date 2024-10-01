@@ -155,7 +155,7 @@
 
             bindings = <
         &kp LG(Q)  &kp LG(W)         &kp LG(E)     &kp LG(R)         &trans           &trans  &kp LC(M)               &kp UP_ARROW       &kp LC(I)  &kp LG(LA(LEFT_BRACKET))
-        &kp LSHFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LS(LG(A))    &trans  &kp LEFT                &kp DOWN           &kp RIGHT  &kp LG(LA(RIGHT_BRACKET))
+        &kp LSHFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LG(LC(J))    &trans  &kp LEFT                &kp DOWN           &kp RIGHT  &kp LG(LA(RIGHT_BRACKET))
 &trans  &kp LG(Z)  &kp LG(X)         &kp LG(C)     &kp LG(V)         &kp LG(B)        &trans  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans     &kp LG(SLASH)              &trans
                                      &to 0         &kp SPACE         &trans           &trans  &trans                  &trans
             >;
@@ -180,10 +180,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans          &trans            &trans  &trans  &trans    &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
-        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp S   &trans  &trans    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
-&trans  &trans          &trans            &trans  &trans  &trans    &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
-                                          &trans  &trans  &trans    &trans  &trans                    &kp LG(BACKSPACE)
+        &trans          &trans            &trans  &trans  &trans           &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
+        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp S   &trans  &kp LC(LG(J))    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
+&trans  &trans          &trans            &trans  &trans  &trans           &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
+                                          &trans  &trans  &trans           &trans  &kp LS(LG(A))             &kp LG(BACKSPACE)
             >;
         };
 
