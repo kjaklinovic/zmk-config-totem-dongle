@@ -180,10 +180,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans          &trans            &trans  &trans  &trans    &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
-        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp S   &trans  &trans    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
-&trans  &trans          &trans            &trans  &trans  &trans    &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
-                                          &trans  &trans  &trans    &trans  &kp LS(LG(A))             &kp LG(BACKSPACE)
+        &trans          &trans            &trans        &trans  &trans    &trans  &kp LC(M)                 &kp LG(UP_ARROW)           &kp LC(I)      &trans
+        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans    &trans  &kp LG(LEFT)              &kp LG(DOWN)               &kp LG(RIGHT)  &trans
+&trans  &trans          &trans            &trans        &trans  &trans    &trans  &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))  &trans         &trans  &trans
+                                          &trans        &trans  &trans    &trans  &kp LS(LG(A))             &kp LG(BACKSPACE)
             >;
         };
 
@@ -240,7 +240,7 @@
             &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
             &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &func_arrow   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
 &kp LA(N8)  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
-                                              &trans             &trans        &trans                   &kp TILDE     &kp DOT               &kp GRAVE
+                                              &kp GRAVE          &trans        &trans                   &kp TILDE     &kp DOT               &kp BACKSPACE
             >;
 
             label = "SYM";
