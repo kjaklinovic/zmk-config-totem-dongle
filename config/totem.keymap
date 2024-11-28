@@ -154,7 +154,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LG(Q)  &kp LG(W)         &kp LG(E)     &kp LG(R)         &trans           &trans  &kp LC(M)               &kp UP_ARROW       &kp LC(I)  &kp LG(LA(LEFT_BRACKET))
+        &kp LG(Q)  &kp LG(W)         &kp LG(E)     &kp LG(R)         &kp LG(A)        &trans  &kp LC(M)               &kp UP_ARROW       &kp LC(I)  &kp LG(LA(LEFT_BRACKET))
         &kp LSHFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LG(LC(J))    &trans  &kp LEFT                &kp DOWN           &kp RIGHT  &kp LG(LA(RIGHT_BRACKET))
 &trans  &kp LG(Z)  &kp LG(X)         &kp LG(C)     &kp LG(V)         &kp LG(B)        &trans  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT))  &trans     &kp LG(SLASH)              &trans
                                      &to 0         &kp SPACE         &trans           &trans  &trans                  &trans
@@ -226,10 +226,10 @@
 
         shift_layer {
             bindings = <
-        &trans  &trans            &trans        &trans            &trans    &trans  &trans        &kp LS(UP_ARROW)    &trans         &trans
-        &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &trans  &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &trans
-&trans  &trans  &trans            &trans        &trans            &trans    &trans  &trans        &trans              &trans         &trans  &trans
-                                  &trans        &trans            &trans    &trans  &trans        &trans
+        &trans  &trans            &trans        &trans            &trans    &trans  &trans         &kp LS(UP_ARROW)    &trans         &trans
+        &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &trans  &kp LS(LEFT)   &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &trans
+&trans  &trans  &trans            &trans        &trans            &trans    &trans  &trans         &trans              &trans         &trans  &trans
+                                  &trans        &trans            &trans    &trans  &kp LS(ENTER)  &trans
             >;
 
             label = "SHI";
@@ -240,7 +240,7 @@
             &kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT              &kp CARET     &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
             &kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)    &func_arrow   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BACKSLASH
 &kp LA(N8)  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5             &kp NUMBER_6  &kp N7                &kp N8                 &kp N9     &kp N0         &kp PIPE
-                                              &kp GRAVE          &trans        &trans                   &kp TILDE     &kp DOT               &kp BACKSPACE
+                                              &kp GRAVE          &trans        &trans                   &kp TILDE     &as_ht COLON PERIOD   &kp BACKSPACE
             >;
 
             label = "SYM";
