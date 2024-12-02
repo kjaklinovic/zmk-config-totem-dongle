@@ -38,7 +38,7 @@
 
         to_nav_layer {
             bindings = <&to 1>;
-            key-positions = <16 18>;
+            key-positions = <16 17>;
             layers = <0>;
         };
     };
