@@ -130,7 +130,7 @@
                     &as_ht Q Q  &as_ht W W  &as_ht E E  &as_ht R R              &as_ht T T    &as_ht Y Y  &as_ht U U   &as_ht I I          &as_ht O O      &as_ht P P
                     &lt 5 A     &lt 4 S     &lt 3 D     &lt 2 F                 &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
 &mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C  &as_ht V V              &as_ht B B    &as_ht N N  &as_ht M M   &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH     &as_ht SINGLE_QUOTE SINGLE_QUOTE
-                                            &sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB     &sl 7       &lt 7 ENTER  &kp BSPC
+                                            &sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB     &sl 9       &lt 7 ENTER  &kp BSPC
             >;
         };
 
@@ -265,6 +265,15 @@
             >;
 
             label = "WIN";
+        };
+
+        window_switch {
+            bindings = <
+        &kp LS(LA(LG(LC(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LG(LC(E))))  &kp LS(LA(LC(LG(R))))  &trans         &trans       &trans  &trans  &trans  &trans
+        &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LG(LA(LC(F))))  &trans         &trans       &trans  &trans  &trans  &trans
+&trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &trans         &trans       &trans  &trans  &trans  &trans  &trans
+                                                      &kp LG(GRAVE)          &kp LG(SPACE)          &kp LG(TAB)    &alt_tab_on  &trans  &trans
+            >;
         };
     };
 };
