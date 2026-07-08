@@ -103,32 +103,6 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
-
-        // Used only as the "hold" behavior of lt_cap below.
-        // If another key is pressed while held, resolves to the layer (mo) immediately.
-        // If released with no other key pressed, retro-tap fires the capital letter instead.
-        mo_or_cap: mo_or_cap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_OR_CAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-            retro-tap;
-        };
-
-        // Home-row-mod layer-tap that also yields a capital letter when held alone.
-        // Usage: &lt_cap <layer> <capital keycode> <lowercase keycode>
-        lt_cap: lt_cap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_CAP";
-            bindings = <&mo_or_cap>, <&kp>;
-
-            #binding-cells = <3>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
     };
 
     keymap {
@@ -154,7 +128,7 @@
 
             bindings = <
                     &as_ht Q Q  &as_ht W W  &as_ht E E  &as_ht R R              &as_ht T T    &as_ht Y Y  &as_ht U U   &as_ht I I          &as_ht O O      &as_ht P P
-                    &lt_cap 5 LS(A) A  &lt_cap 4 LS(S) S  &lt_cap 3 LS(D) D  &lt_cap 2 LS(F) F     &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
+                    &lt 5 A     &lt 4 S     &lt 3 D     &lt 2 F                 &as_ht G G    &as_ht H H  &as_ht J J   &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
 &mt LEFT_SHIFT ESC  &as_ht Z Z  &as_ht X X  &as_ht C C  &as_ht V V              &as_ht B B    &as_ht N N  &as_ht M M   &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH     &as_ht SINGLE_QUOTE SINGLE_QUOTE
                                             &sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB     &sl 9       &lt 7 ENTER  &kp BSPC
             >;
